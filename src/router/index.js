@@ -1,28 +1,56 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 
-Vue.use(VueRouter)
-
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/install',
+    name: 'Install',
+    component: () => import('../views/00-install')
+  },
+  {
+    path: '/reactivity',
+    name: 'Reactivity',
+    component: () => import('../views/30-vue3-component')
+  },
+  {
+    path: '/composition-api',
+    name: 'CompositionApi',
+    component: () => import('../views/50-vue3-composition')
+  },
+  {
+    path: '/props',
+    name: 'Props',
+    component: () => import('../views/70-props-in-setup')
+  },
+  {
+    path: '/filters',
+    name: 'Filters',
+    component: () => import('../views/90-vue3-no-filters')
+  },
+  {
+    path: '/dynamic-binding',
+    name: 'DynamicBinding',
+    component: () => import('../views/100-dynamic-binding')
+  },
+  {
+    path: '/teleport',
+    name: 'Teleport',
+    component: () => import('../views/110-teleport')
+  },
+  {
+    path: '/suspense',
+    name: 'Suspense',
+    component: () => import('../views/120-suspense')
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
