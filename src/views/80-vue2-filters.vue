@@ -3,14 +3,7 @@
 </template>
 
 <script>
-
-function capitalize (input) {
-  return input.toUpperCase()
-}
-
-function revert (input) {
-  return input.split('').reverse().join('')
-}
+import { capitalize, revert } from '../reusable/string-utilities'
 
 export default {
   data () {
