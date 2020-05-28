@@ -5,12 +5,6 @@
         <router-link :to="{name: 'Reactivity'}">Reactivity</router-link>
       </li>
       <li>
-        <router-link :to="{name: 'Install'}">Installation</router-link>
-      </li>
-      <li>
-        <router-link :to="{name: 'Reactivity'}">Reactivity</router-link>
-      </li>
-      <li>
         <router-link :to="{name: 'CompositionApi'}">Composition API</router-link>
       </li>
       <li>
