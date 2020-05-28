@@ -9,12 +9,6 @@
 import doubleMixin from '../reusable/mixin-double'
 import tripleMixin from '../reusable/mixin-triple'
 
-const tripleMixin = {
-  computed: {
-    adjustedValue () { return this.baseValue * 3 }
-  }
-}
-
 export default {
   mixins: [ doubleMixin, tripleMixin ],
   data () {
