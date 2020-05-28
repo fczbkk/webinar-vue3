@@ -13,6 +13,11 @@ const routes = [
     component: () => import('../views/00-install')
   },
   {
+    path: '/multi-root',
+    name: 'MultiRoot',
+    component: () => import('../views/10-multi-root-element')
+  },
+  {
     path: '/reactivity',
     name: 'Reactivity',
     component: () => import('../views/30-vue3-component')

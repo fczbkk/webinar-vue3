@@ -2,6 +2,9 @@
   <div class="home">
     <ul>
       <li>
+        <router-link :to="{name: 'MultiRoot'}">Multi root</router-link>
+      </li>
+      <li>
         <router-link :to="{name: 'Reactivity'}">Reactivity</router-link>
       </li>
       <li>
