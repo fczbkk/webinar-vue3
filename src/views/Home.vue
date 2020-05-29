@@ -11,6 +11,9 @@
         <router-link :to="{name: 'CompositionApi'}">Composition API</router-link>
       </li>
       <li>
+        <router-link :to="{name: 'Reactive'}">Reactive</router-link>
+      </li>
+      <li>
         <router-link :to="{name: 'Props'}">Props</router-link>
       </li>
       <li>

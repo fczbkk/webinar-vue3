@@ -28,6 +28,11 @@ const routes = [
     component: () => import('../views/50-vue3-composition')
   },
   {
+    path: '/reactive',
+    name: 'Reactive',
+    component: () => import('../views/60-reactive')
+  },
+  {
     path: '/props',
     name: 'Props',
     component: () => import('../views/70-props-in-setup')
