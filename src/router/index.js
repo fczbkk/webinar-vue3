@@ -56,6 +56,11 @@ const routes = [
     path: '/suspense',
     name: 'Suspense',
     component: () => import('../views/120-suspense')
+  },
+  {
+    path: '/sandbox',
+    name: 'Sandbox',
+    component: () => import('../views/Sandbox')
   }
 ]
 

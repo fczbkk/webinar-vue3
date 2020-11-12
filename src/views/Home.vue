@@ -28,6 +28,9 @@
       <li>
         <router-link :to="{name: 'Suspense'}">Suspense</router-link>
       </li>
+      <li>
+        <router-link :to="{name: 'Sandbox'}">Sandbox</router-link>
+      </li>
     </ul>
   </div>
 </template>
